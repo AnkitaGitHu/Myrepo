@@ -1,0 +1,157 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Blood Bank Management</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+         </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'patient' %}">Patient</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'donor' %}">Donor</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'admin' %}">Admin</a>
+        </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<style>
+    services {}
+#services .services-top {
+    padding: 70px 0 50px;
+}
+#services .services-list {
+    padding-top: 50px;
+}
+.services-list .service-block {
+    margin-bottom: 25px;
+}
+.services-list .service-block .ico {
+    font-size: 38px;
+    float: left;
+}
+.services-list .service-block .text-block {
+    margin-left: 58px;
+}
+.services-list .service-block .text-block .name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.services-list .service-block .text-block .info {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.services-list .service-block .text-block .text {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 300;
+}
+.highlight {
+    color: #2ac5ed;
+    font-weight:bold;
+}           
+</style>         
+
+
+<div class="container bootstrap snippets bootdey">
+    <section id="services" class="current">
+        <div class="services-top">
+            <div class="container bootstrap snippets bootdey">
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-12 col-md-12">
+                        <h2 style="font-size: 60px;line-height: 60px;margin-bottom: 20px;font-weight: 900;">Our Services</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-1 col-sm-12 col-md-12 col-md-10">
+                        <div class="services-list">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-md-4">
+                                    <div class="service-block" style="visibility: visible;">
+                                        <div class="ico fa fa-magic highlight"></div>
+                                        <div class="text-block">
+                                            <div class="name">Blood Storage</div>
+                                            <div class="text">We store the safest blood groups which you can use for any kind of treatement or in an emergency. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-md-4">
+                                    <div class="service-block" style="visibility: visible;">
+                                        <div class="ico fa fa-code highlight"></div>
+                                        <div class="text-block">
+                                            <div class="name">Blood Donation</div>
+                                            <div class="text">Donation of blood is an selfless service that we do for mankind! We allow you to save a life by donation blood to the ones who need it.</div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-6 col-md-4 col-md-4">
+                                    <div class="service-block" style="visibility: visible;">
+                                        <div class="ico fa fa-eye highlight"></div>
+                                        <div class="text-block">
+                                            <div class="name">Provision Of Red Blood Cells</div>
+                                    
+                                            <div class="text">Lowering in the count of red blood cells could be dangerous. We also provide red blood cells for various treatment </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-md-4">
+                                    <div class="service-block" style="visibility: visible;">
+                                        <div class="ico fa fa-umbrella highlight"></div>
+                                        <div class="text-block">
+                                            <div class="name">provision of platelets</div>
+                    
+                                            <div class="text">plateletes play an important role in blocking the blood flow at the times of injuries. we also provide plateletes  to manitain its count in your blood </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-md-4">
+                                    <div class="service-block" style="visibility: visible;">
+                                        <div class="ico fa fa-umbrella highlight"></div>
+                                        <div class="text-block">
+                                            <div class="name">Blood Products</div>
+                    
+                                            <div class="text">Blood Center is dedicated to providing the highest quality blood products and services. Our staff is ready to serve you 24/7.  </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-md-4">
+                                    <div class="service-block" style="visibility: visible;">
+                                        <div class="ico fa fa-umbrella highlight"></div>
+                                        <div class="text-block">
+                                            <div class="name">Biomedical Services</div>
+                    
+                                            <div class="text">Blood and Diagnostic testing, Blood group serology, HLA testing, Immunohematology Reference lab testing </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>                    
