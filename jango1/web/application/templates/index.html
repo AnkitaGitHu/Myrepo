@@ -22,14 +22,14 @@
         <a class="nav-link" href="{% url 'donor' %}">Donor</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'admin' %}">Admin</a>
+        <a class="nav-link" href="{% url 'register' %}">Register</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown link
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="{% url 'logout' %}">logout</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -42,7 +42,7 @@
   <br>
   <br>
   <br>
-  <center><img src="{% static 'C:\Users\Admin\Desktop\jango1\web\static\img\b1.jpg' %}" alt="Blood" width="65%">
+  <center><img src="{% static 'img\b1.jpg' %}" alt="Blood" width="65%">
   <br>
   <br>
   <p><b> <font size="5">"<u> BLOOD DONATION IS THE REAL ACT OF HUMANITY </u>"</font></b></p></center>
